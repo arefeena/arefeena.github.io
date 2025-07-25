@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track My Friends</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+    .plane-emoji {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      animation: fly 2s ease-in-out infinite alternate;
+    }
+    @keyframes fly {
+      0% { transform: translateX(0) translateY(0); }
+      100% { transform: translateX(20px) translateY(-10px); }
+    }
+    .button {
+      font-size: 2rem;
+      padding: 1rem 2rem;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="plane-emoji">✈️</div>
+  <button class="button" onclick="window.location.href='https://amararefeen.com/nyctouchdown/'">Track my friends</button>
+</body>
+</html>
